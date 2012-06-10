@@ -28,3 +28,6 @@ pip-log.txt
 
 #VS solution object
 .suo
+
+#Output file
+*.html
