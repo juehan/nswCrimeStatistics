@@ -1,7 +1,9 @@
 # -*- coding:utf-8 -*-
 #!/usr/bin/env python
 
-"""crawler.py: Web crawler and post-processor to retrieve NSW crime report from NSW Police website """
+"""crawler.py: Web crawler and post-processor to retrieve NSW crime report from NSW Police website 
+    This is wrapper for geopy library and use BeautifulSoup to process HTML soup.
+"""
 
 __author__ = "John (Ju-han) Lee"
 __copyright__ = "Copyright 2012, nswCrimeStatistics Project"
