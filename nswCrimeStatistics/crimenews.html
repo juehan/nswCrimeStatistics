@@ -1,0 +1,157 @@
+<!DOCTYPE html><html><head><title>NSW Crime Report</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 90%; margin: 5; padding: 5 }
+#map_canvas { height: 100% }
+</style>
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDUWg0EnNMSjHXKFMXMRiHR_V3enb5qMho&sensor=false">
+</script>
+<script type="text/javascript">
+function initialize() {
+          var latlng = new google.maps.LatLng(-33.86469, 151.04363);
+          var myOptions = {
+              zoom: 6,
+              center: latlng,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+          var places = [];
+places.push(new google.maps.LatLng(-33.41765, 149.58103))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+places.push(new google.maps.LatLng(-34.57624, 142.74499))
+places.push(new google.maps.LatLng(-33.95745, 151.23112))
+places.push(new google.maps.LatLng(-33.96711, 151.10285))
+places.push(new google.maps.LatLng(-33.85755, 151.18104))
+places.push(new google.maps.LatLng(-33.89381, 151.26307))
+places.push(new google.maps.LatLng(-32.59052, 149.58876))
+places.push(new google.maps.LatLng(-33.77831, 151.10715))
+places.push(new google.maps.LatLng(-33.92002, 150.92413))
+places.push(new google.maps.LatLng(-34.44695, 147.53376))
+places.push(new google.maps.LatLng(-30.29631, 153.11567))
+places.push(new google.maps.LatLng(-33.95213, 151.05231))
+places.push(new google.maps.LatLng(-31.63254, 152.70372))
+places.push(new google.maps.LatLng(-33.91729, 151.03588))
+places.push(new google.maps.LatLng(-33.55791, 150.79619))
+places.push(new google.maps.LatLng(-33.91063, 151.15646))
+places.push(new google.maps.LatLng(-31.25322, 146.92110))
+var crimes = new Array(20)
+                 for(var i = 0; i <20;i++){
+                    crimes[i] = new Array(4)
+                }
+crimes[0][0]="Police appeal for assistance to locate missing man"
+crimes[0][1]="Bathurst, NSW, Australia"
+crimes[0][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzMzLmh0bWwmYWxsPTE%3D"
+crimes[0][3]="Sunday, 10 June 2012 04:36:04 PM"
+crimes[1][0]="Man charged with lighting fires"
+crimes[1][1]="Canobolas LAC, NSW, Australia"
+crimes[1][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzI2Lmh0bWwmYWxsPTE%3D"
+crimes[1][3]="Sunday, 10 June 2012 01:43:11 AM"
+crimes[2][0]="Man caught driving at 170km/h, records 0.159 breath analysis"
+crimes[2][1]="Monaro LAC, NSW, Australia"
+crimes[2][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzI1Lmh0bWwmYWxsPTE%3D"
+crimes[2][3]="Saturday, 09 June 2012 10:52:47 PM"
+crimes[3][0]="Appeal for public assistance following wildfires"
+crimes[3][1]="Canobolas LAC, NSW, Australia"
+crimes[3][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzI0Lmh0bWwmYWxsPTE%3D"
+crimes[3][3]="Saturday, 09 June 2012 08:15:30 PM"
+crimes[4][0]="Man charged following fatal crash"
+crimes[4][1]="Euston, NSW, Australia"
+crimes[4][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzIzLmh0bWwmYWxsPTE%3D"
+crimes[4][3]="Saturday, 09 June 2012 04:14:16 PM"
+crimes[5][0]="Man charged with drug supply"
+crimes[5][1]="Matraville, NSW, Australia"
+crimes[5][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzIyLmh0bWwmYWxsPTE%3D"
+crimes[5][3]="Saturday, 09 June 2012 01:43:14 PM"
+crimes[6][0]="Two further arrests made after robbery and assault of man"
+crimes[6][1]="Hurstville, NSW, Australia"
+crimes[6][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzIxLmh0bWwmYWxsPTE%3D"
+crimes[6][3]="Saturday, 09 June 2012 10:38:33 AM"
+crimes[7][0]="Aggravated break, enter and steal"
+crimes[7][1]="Balmain, NSW, Australia"
+crimes[7][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzE5Lmh0bWwmYWxsPTE%3D"
+crimes[7][3]="Saturday, 09 June 2012 05:27:20 AM"
+crimes[8][0]="Man shot during alleged robbery"
+crimes[8][1]="Bondi, NSW, Australia"
+crimes[8][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzE4Lmh0bWwmYWxsPTE%3D"
+crimes[8][3]="Saturday, 09 June 2012 04:04:43 AM"
+crimes[9][0]="Man charged after ear allegedly bitten"
+crimes[9][1]="Mudgee, NSW, Australia"
+crimes[9][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzE3Lmh0bWwmYWxsPTE%3D"
+crimes[9][3]="Friday, 08 June 2012 11:44:43 PM"
+crimes[10][0]="Dead woman identified"
+crimes[10][1]="Marsfield, NSW, Australia"
+crimes[10][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzE2Lmh0bWwmYWxsPTE%3D"
+crimes[10][3]="Friday, 08 June 2012 11:35:21 PM"
+crimes[11][0]="Police seek witnesses to stabbing"
+crimes[11][1]="Liverpool, NSW, Australia"
+crimes[11][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzE0Lmh0bWwmYWxsPTE%3D"
+crimes[11][3]="Friday, 08 June 2012 04:35:59 PM"
+crimes[12][0]="Ultra light crashes"
+crimes[12][1]="Temora, NSW, Australia"
+crimes[12][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzEyLmh0bWwmYWxsPTE%3D"
+crimes[12][3]="Friday, 08 June 2012 04:27:59 PM"
+crimes[13][0]="Police release COMFIT image of man involved in shooting"
+crimes[13][1]="Coffs Harbour, NSW, Australia"
+crimes[13][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzExLmh0bWwmYWxsPTE%3D"
+crimes[13][3]="Friday, 08 June 2012 03:04:49 PM"
+crimes[14][0]="Police renew appeal on fatal shooting"
+crimes[14][1]="Riverwood, NSW, Australia"
+crimes[14][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzA2Lmh0bWwmYWxsPTE%3D"
+crimes[14][3]="Friday, 08 June 2012 11:45:38 AM"
+crimes[15][0]="Police seize firearms during vehicle stop"
+crimes[15][1]="Kendall, NSW, Australia"
+crimes[15][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNzAzLmh0bWwmYWxsPTE%3D"
+crimes[15][3]="Friday, 08 June 2012 10:29:44 AM"
+crimes[16][0]="Police seek man over armed hold up"
+crimes[16][1]="Bankstown, NSW, Australia"
+crimes[16][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNjk5Lmh0bWwmYWxsPTE%3D"
+crimes[16][3]="Friday, 08 June 2012 05:13:35 AM"
+crimes[17][0]="Man seriously injured in crash"
+crimes[17][1]="Freemans Reach, NSW, Australia"
+crimes[17][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNjk4Lmh0bWwmYWxsPTE%3D"
+crimes[17][3]="Friday, 08 June 2012 04:53:46 AM"
+crimes[18][0]="Police appeal for witnesses following stealing"
+crimes[18][1]="Marrickville, NSW, Australia"
+crimes[18][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNjk3Lmh0bWwmYWxsPTE%3D"
+crimes[18][3]="Friday, 08 June 2012 04:45:33 AM"
+crimes[19][0]="Man charged with threatening to kill teenager"
+crimes[19][1]="Campbelltown LAC, NSW, Australia"
+crimes[19][2]="http://m.police.nsw.gov.au/news_media_releases?sq_content_src=%2BdXJsPWh0dHBzJTNBJTJGJTJGd3d3LmViaXoucG9saWNlLm5zdy5nb3YuYXUlMkZtZWRpYSUyRjIzNjk2Lmh0bWwmYWxsPTE%3D"
+crimes[19][3]="Friday, 08 June 2012 04:35:41 AM"
+var infoWindow;
+
+          for(var i = 0; i < places.length; i++){
+              var marker = new google.maps.Marker({
+                  position: places[i],
+                  map: map,
+                  title: 'NSW Crime' + i
+              });
+              (function(i, marker){
+                  google.maps.event.addListener(marker, 'click', function(){
+                    if(!infoWindow)
+                    {
+                      infoWindow = new google.maps.InfoWindow();
+                    }
+                    var content = '<div id="info">' + 
+                                    '<h4>'+ crimes[i][1] +'</h4>'+
+                                    '<p>'+ crimes[i][0]+'</p>'+
+                                    '<p><i>'+ crimes[i][3]+'</i></p>'+
+                                    '<p><a href='+crimes[i][2]+' target="_blank">See more details</a></p>'+
+                                  '</div>';
+                    infoWindow.setContent(content);
+                    infoWindow.open(map, marker);
+                    });              })(i, marker);
+          }
+          google.maps.event.trigger(marker, 'click');
+        }
+       </script>
+    </head>
+<body onload="initialize()">
+            <div id="map_canvas" style="width:100%; height:100%"></div>
+            <br>Refer to <a href="readme.htm">README</a> page for some details of this app.
+	        <br>Last updated: 2012-06-10 18:33:42 (UTC/GMT+10 hours, EDT, Sydney/Australia)
+          </body></html>

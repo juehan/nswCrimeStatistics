@@ -1,0 +1,30 @@
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Wagga Wagga, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Wagga Wagga, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Wagga Wagga, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 2.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: Sydney, NSW, Australia, Exception: Didn't find exactly one placemark! (Found 3.)
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.
+location: , Exception: No corresponding geographic location could be found for the specified location, possibly because the address is relatively new, or because it may be incorrect.

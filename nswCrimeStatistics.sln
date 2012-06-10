@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "nswCrimeStatistics", "nswCrimeStatistics\nswCrimeStatistics.pyproj", "{A9F15285-343E-4B43-817E-59FC3FF2FFE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{53D35EDC-EC65-4394-A8B1-0C2913E47DFB}"
+	ProjectSection(SolutionItems) = preProject
+		nswCrimeStatistics\lib\beautifulsoup4-4.1.0.tar.gz = nswCrimeStatistics\lib\beautifulsoup4-4.1.0.tar.gz
+		nswCrimeStatistics\lib\geopy-0.94.2.tar.gz = nswCrimeStatistics\lib\geopy-0.94.2.tar.gz
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9F15285-343E-4B43-817E-59FC3FF2FFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F15285-343E-4B43-817E-59FC3FF2FFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
