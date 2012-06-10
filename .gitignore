@@ -31,3 +31,4 @@ pip-log.txt
 
 #Output file
 *.html
+*.htm
