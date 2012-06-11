@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-#!/usr/bin/env python
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
 
 """crawler.py: Web crawler and post-processor to retrieve NSW crime report from NSW Police website 
     This is wrapper for geopy library and use BeautifulSoup to process HTML soup.
@@ -120,9 +120,3 @@ def generate_news_list():
             news.append(latlang)
             newslist.append(news)
     return newslist
-
-
-
-    
-
-

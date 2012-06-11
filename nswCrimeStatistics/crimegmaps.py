@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-#!/usr/bin/env python
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
 
 """crimemaps.py: Web crawler and post-processor to retrieve NSW crime report from NSW Police website """
 

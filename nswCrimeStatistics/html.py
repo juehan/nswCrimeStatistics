@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
 
 """html.py: provide HTML header and footer to construct crime report webpage """
 
@@ -37,11 +37,14 @@ _FOOTER = '<body onload=\"initialize()\">\n\
           </body></html>'
 
 def getHeader():
+    """ return header part of HTML """
     return _HEADER
 
 def getFooter():
+    """ return footer part of HTML"""
     return _FOOTER
 
 def makeHTML(header, body, footer):
+    """ create html file and compose it with given header, body and footer """
     f = open("crimenews.html", "w")
     f.write(header+body+footer)

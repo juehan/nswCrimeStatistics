@@ -1,16 +1,24 @@
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
+
+"""placeset.py: create place table in SQLite"""
+
+__author__ = "John (Ju-han) Lee"
+__copyright__ = "Copyright 2012, nswCrimeStatistics Project"
+__credits__ = "John (Ju-han) Lee"
+__license__ = "Apache"
+__version__ = "2.0"
+__maintainer__ = "John (Ju-han) Lee"
+__email__ = "to.johnny.lee@gmail.com"
+__status__ = "Experimental"
+
 '''
-Created on 2012. 2. 17.
-
-@author: John
-Module to create place table
-
 Store to keep location on set container
 1. check file whether already exist
 2. if so, open file, unpickle and load it to set
 2-1. if not, create empty set and pickle it and store as file
 
-
 '''
+
 import os
 import pickle
 

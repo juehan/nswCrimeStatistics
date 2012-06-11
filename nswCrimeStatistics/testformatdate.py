@@ -1,3 +1,5 @@
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
+
 import unittest
 from formatdate import formatDate
 

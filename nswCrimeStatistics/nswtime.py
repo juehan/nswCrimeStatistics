@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/eval PYTHONPATH=/home/nswcrime/modules python
+
 
 """nswtime.py: Get Sydney / Australia's local time"""
 
